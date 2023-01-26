@@ -10,7 +10,7 @@ const asyncCards = async () => {
         cardList.innerHTML =
           cardList.innerHTML +
           `
-        <div class="col boh d-flex justify-content-center">
+        <div class="col d-flex justify-content-center">
         <div class="card removeCards mt-5" style="width: 18rem;">
         <img src="${el.img}" class="card-img-top images" alt="...">
         <div class="card-body d-flex flex-column justify-content-between">
@@ -35,7 +35,5 @@ const asyncCards = async () => {
 asyncCards();
 
 const removeSelectedCard = () => {
-  const selectedElement = document.querySelectorAll(".removeCards");
-  const list = document.querySelector(".boh");
-  selectedElement.forEach((element) => list.removeChild(element));
+  // Work in progress
 };
